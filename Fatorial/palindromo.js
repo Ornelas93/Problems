@@ -8,17 +8,17 @@
 - usar sem pre o padrao camelCase
 */
 
-const testCase = "AMOR A ROMA";
+const testCase = ["amor a roma", "raysson", "A Daniela ama a lei? Nada!", "Aí, Lima falou: “Olá, família!”."];
 
-const isPalindromo = (palavraPalindromo) =>{
-  var removeCaraterEspeciais = /[^a-zA-Zs]/g;
-  var array =[...palavraPalindromo.replace(removeCaraterEspeciais,"")];
-  var array2 = [...palavraPalindromo.replace(removeCaraterEspeciais,"")];
-  array = array.reverse();
-  var is_same = (array.length == array2.length) && array.every(function(element, index) {
-    return element === array2[index];
-});
-  console.log(is_same);
+const isPalindromo = (word) =>{
+  const wordFilter = word.split(/\s*\s*/);
+  for (let i = 0; i < (wordFilter.length /2); i++){
+    if(wordFilter[i]!==wordFilter[(wordFilter.length-1)-i]){
+      return false;
+    }
+  }
+  return true;
 }
-isPalindromo(testCase.toUpperCase());
-//console.log(convertePalindromo(palavraPalindromo));
+for(let i=0; i< testCase.length; i++){
+  console.log(isPalindromo(testCase[i].toUpperCase()));
+}
