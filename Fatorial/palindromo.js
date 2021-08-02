@@ -11,9 +11,9 @@
 const testCase = ["amor a roma", "raysson", "A Daniela ama a lei? Nada!", "Aí, Lima falou: “Olá, família!”."];
 
 const isPalindromo = (word) =>{
-  const wordFilter = word.split(/\s*\s*/);
-  for (let i = 0; i < (wordFilter.length /2); i++){
-    if(wordFilter[i]!==wordFilter[(wordFilter.length-1)-i]){
+  const wordFilter = word.normalize('NFD').replace(/([\u0300-\u036f]|[^0-9a-zA-Z])/g, '');
+  for (let i = 0; i < (wordFilter.length / 2); i++){
+    if(wordFilter[i]!==wordFilter[(wordFilter.length - 1)-i]){
       return false;
     }
   }
