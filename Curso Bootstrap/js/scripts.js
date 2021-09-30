@@ -85,9 +85,53 @@ $(document).ready(function(){
     });
 
     //Paralax
-    
     setTimeout(function(){
         $('#data-area').parallax({imageSrc:'img/parallax.jpg'});
         $('#pattern-img').parallax({imageSrc:'img/banner4.jpg'});
     }, 250);
+    
+    //Filtro das temporadas
+
+    $('.filter-btn').on('click', function(){
+        let type = $(this).attr('id');
+        let boxes = $('.project-box');
+
+        $('.main-btn').removeClass('active');
+        $(this).addClass('active');
+
+        if(type == 'first-btn'){
+            eachBoxes('first', boxes);
+        } else if (type == 'second-btn'){
+            eachBoxes('second', boxes);
+        } else if (type == 'third-btn'){
+            eachBoxes('third', boxes);
+        }else if (type == 'fourth-btn'){
+            eachBoxes('fourth', boxes);
+        } else{
+            eachBoxes('all', boxes);
+        }
+    });
+
+    function eachBoxes(type, boxes){
+        if (type == 'all'){
+            $(boxes).fadeIn();
+        } else {
+            $(boxes).each(function(){
+                if(!$(this).hasClass(type)){
+                    $(this).fadeOut('slow');
+                } else{
+                    $(this).fadeIn();
+                }
+            });
+        }
+
+    }
+
+    //scroll para seções
+    let navBtn = $('.nav-item');
+
+    let bannerSection = $('#mainSlider');
+    let aboutSection = $('#about-area');
+    let attributesSection = $('#attributes-area');
+    let attributesSection = $('#attributes-area');
 });

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/1.png" />
     <title>Rick and Morty</title>
     <!-- Fonte -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,8 +35,9 @@
 </head>
 <body>
     <header>
+        <!-- Menu -->
         <div class="container" id="nav-container">
-            <nav class="navbar navbar-expand-lg fixed-top">
+            <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
                 <a href="#" class="navbar-brand">
                     <img id="logo" src="img/rickandmorty_logo.png" alt="Rick and Morty"> Rick and Morty
                 </a>
@@ -58,6 +60,7 @@
     </header>
     <main>
         <div class="container-fluid">
+            <!-- Carousel -->
             <div id="mainSlider" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
@@ -67,7 +70,7 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="img/banner1.jpg" class="d-block w-100" alt="Uma grande cagada">
-                        <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-caption d-block">
                             <h2>Aquela cagada mágica</h2>
                             <p>Casamentos são, basicamente, funerais com bolo.</p>
                             <a href="#" class="main-btn">Ver o sériado</a>
@@ -75,7 +78,7 @@
                     </div>
                     <div class="carousel-item">
                         <img src="img/banner2.jpg" class="d-block w-100" alt="Uma grande cagada" >
-                        <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-caption d-block">
                             <h2>O melhor </h2>
                             <p>A vida é esforço e vou parar quando morrer!</p>
                             <a href="#" class="main-btn">Ver o sériado</a>
@@ -83,7 +86,7 @@
                     </div>
                     <div class="carousel-item">
                         <img src="img/banner4.jpg" alt="Uma grande cagada" class="d-block w-100">
-                        <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-caption d-block">
                             <h2>Aquela cagada mágica</h2>
                             <p>Ninguém existe por um propósito. Ninguém pertence a lugar nenhum. Todo mundo vai morrer.</p>
                             <a href="#" class="main-btn">Ver o sériado</a>
@@ -211,147 +214,122 @@
                         <div class="col-12">
                             <h3 class="main-title">Caracteristicas do desenho</h3>
                         </div>
-                        <div class="card-deck">
-                            <div class="col-md-3">
-                                <div class="card">
-                                    <img src="img/teste (8).jpg" alt="Teste1" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Titulo 1</h5>
-                                        <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="img/teste (8).jpg" alt="Teste1" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Titulo 1</h5>
+                                    <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este
+                                    conteúdo é um pouco maior, para demonstração.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="img/teste.jpg" alt="Teste1" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Titulo 1</h5>
+                                    <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um
+                                        conteúdo adicional. Este
                                         conteúdo é um pouco maior, para demonstração.</p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="text-muted">Atualizado 3 minutos atrás</small>
-                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-3">
-                                <div class="card">
-                                    <img src="img/teste.jpg" alt="Teste1" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Titulo 1</h5>
-                                        <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um
-                                            conteúdo adicional. Este
-                                            conteúdo é um pouco maior, para demonstração.</p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="text-muted">Atualizado 3 minutos atrás</small>
-                                    </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="img/teste (4).jpg" alt="Teste1" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Titulo 1</h5>
+                                    <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um
+                                        conteúdo adicional. Este
+                                        conteúdo é um pouco maior, para demonstração.</p>
                                 </div>
                             </div>
-                            <div class="col-md-3">
-                                <div class="card">
-                                    <img src="img/teste (4).jpg" alt="Teste1" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Titulo 1</h5>
-                                        <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um
-                                            conteúdo adicional. Este
-                                            conteúdo é um pouco maior, para demonstração.</p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="text-muted">Atualizado 3 minutos atrás</small>
-                                    </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="img/teste (2).jpg" alt="Teste1" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Titulo 1</h5>
+                                    <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um
+                                        conteúdo adicional. Este
+                                        conteúdo é um pouco maior, para demonstração.</p>
                                 </div>
                             </div>
-                            <div class="col-md-3">
-                                <div class="card">
-                                    <img src="img/teste (2).jpg" alt="Teste1" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Titulo 1</h5>
-                                        <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um
-                                            conteúdo adicional. Este
-                                            conteúdo é um pouco maior, para demonstração.</p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="text-muted">Atualizado 3 minutos atrás</small>
-                                    </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="img/teste (3).jpg" alt="Teste1" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Titulo 1</h5>
+                                    <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um
+                                        conteúdo adicional. Este
+                                        conteúdo é um pouco maior, para demonstração.</p>
                                 </div>
                             </div>
-                            <div class="col-md-3">
-                                <div class="card">
-                                    <img src="img/teste (3).jpg" alt="Teste1" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Titulo 1</h5>
-                                        <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um
-                                            conteúdo adicional. Este
-                                            conteúdo é um pouco maior, para demonstração.</p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="text-muted">Atualizado 3 minutos atrás</small>
-                                    </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="img/teste (13).jpg" alt="Teste1" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Titulo 1</h5>
+                                    <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um
+                                        conteúdo adicional. Este
+                                        conteúdo é um pouco maior, para demonstração.</p>
                                 </div>
                             </div>
-                            <div class="col-md-3">
-                                <div class="card">
-                                    <img src="img/teste (13).jpg" alt="Teste1" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Titulo 1</h5>
-                                        <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um
-                                            conteúdo adicional. Este
-                                            conteúdo é um pouco maior, para demonstração.</p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="text-muted">Atualizado 3 minutos atrás</small>
-                                    </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="img/teste (6).jpg" alt="Teste1" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Titulo 1</h5>
+                                    <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um
+                                        conteúdo adicional. Este
+                                        conteúdo é um pouco maior, para demonstração.</p>
                                 </div>
                             </div>
-                            <div class="col-md-3">
-                                <div class="card">
-                                    <img src="img/teste (6).jpg" alt="Teste1" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Titulo 1</h5>
-                                        <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um
-                                            conteúdo adicional. Este
-                                            conteúdo é um pouco maior, para demonstração.</p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="text-muted">Atualizado 3 minutos atrás</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card">
-                                    <img src="img/teste (16).jpg" alt="Teste1" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Titulo 1</h5>
-                                        <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um
-                                            conteúdo adicional. Este
-                                            conteúdo é um pouco maior, para demonstração.</p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="text-muted">Atualizado 3 minutos atrás</small>
-                                    </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="img/teste (16).jpg" alt="Teste1" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Titulo 1</h5>
+                                    <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um
+                                        conteúdo adicional. Este
+                                        conteúdo é um pouco maior, para demonstração.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Veja o desenho -->
+            <!-- Veja o desenho 
             <div id="see-drawing">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-6 apply-box" id="company-img">
-                            
-                        </div>
-                        <div class="col-6 apply-box" id="pattern-img">
+                        <div class="col-md-6 apply-box" id="company-img"></div>
+                        <div class="col-md-6 apply-box" id="pattern-img">
                             <h4>Premissa</h4>
-                            <p>Rick é um cientista louco excêntrico e alcoólatra, que evita muitas convenções costumeiras como escola, casamento, amor
-                            e família.</p>
-                            <p>Ele frequentemente vai em aventuras com seu neto de 14 anos de idade, Morty, um menino de bom coração, mas
-                            que também fica facilmente angustiado, cuja bússola moral ingênua mas fundamentada funciona em contraponto ao ego
-                            maquiavélico de Rick.</p>
+                            <p>Rick é um cientista louco excêntrico e alcoólatra, que evita muitas convenções costumeiras como
+                                escola, casamento, amor
+                                e família.</p>
+                            <p>Ele frequentemente vai em aventuras com seu neto de 14 anos de idade, Morty, um menino de bom
+                                coração, mas
+                                que também fica facilmente angustiado, cuja bússola moral ingênua mas fundamentada funciona em
+                                contraponto ao ego
+                                maquiavélico de Rick.</p>
                             <a href="#" class="main-btn" id="apply-btn">Veja agora o desenho</a>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
             <!-- Temporadas -->
             <div id="seasons-area">
                 <div class="container">
                     <div class="row">
                         <div class="col-md 12">
-                            <h3 class="main-tile">Conheca as temporadas</h3>
+                            <h3 class="main-title">Conheca as temporadas</h3>
                         </div>
                         <div class="col-md-12" id="filter-btn-box">
                             <button class="main-btn filter-btn active" id="all-btn">Todas</button>
@@ -361,22 +339,96 @@
                             <button class="main-btn filter-btn" id="fourth-btn">4ª temporada</button>
                         </div>
                         <div class="col-md-4 project-box first">
-                            <img src="img/season 1.jpg" class="img-fluid" alt="Primeira temporada">
+                            <img src="img/season 1.jpg" class="img-fluid img-thumbnail" alt="Primeira temporada">
                         </div>
                         <div class="col-md-4 project-box second">
-                            <img src="img/season 2.jpg" class="img-fluid" alt="Segunda temporada">
+                            <img src="img/season 2.jpg" class="img-fluid img-thumbnail" alt="Segunda temporada">
                         </div>
                         <div class="col-md-4 project-box third">
-                            <img src="img/season 3.jpg" class="img-fluid" alt="Terceira temporada">
+                            <img src="img/season_3.jpg" class="img-fluid img-thumbnail" alt="Terceira temporada">
                         </div>
                         <div class="col-md-4 project-box fourth">
-                            <img src="img/season 4.jpg" class="img-fluid" alt="Quarta temporada">
+                            <img src="img/season 4.jpg" class="img-fluid img-thumbnail" alt="Quarta temporada">
                         </div>
+                        <div class="col-md-4 project-box second">
+                            <img src="img/season 2-2.jpg" class="img-fluid img-thumbnail" alt="Quarta temporada">
+                        </div>
+                        <div class="col-md-4 project-box fourth">
+                            <img src="img/season 4-2.jpg" class="img-fluid img-thumbnail" alt="Quarta temporada">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Newsletter -->
+            <div id="news-area">
+                <div class="container">
+                    <div class="col-md-12">
+                        <h3 class="main-title">Fique por dentro das novidades</h3>
+                    </div>
+                    <p>Assine nossa lista de e-mails, e receba nossos conteúdos sobre o desenho.</p>
+                    <form action="">
+                        <input type="email" class="form-control" id="email-input" name="email" placeholder="Seu melhor e-mail">
+                        <input type="submit" id="news-btn" value="Inscrever">
+                    </form>
+                </div>
+            </div>
+            <!-- Call to action-->
+            <div id="call-area">
+                <div class="container">
+                    <div class="row">
+                        <p>Deseja ver o desenho agora ?</p>
+                        <button class="main-btn" id="call-btn">Assistir</button>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+    <!-- Rodapé -->
+    <footer>
+        <div id="contact-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="main-title">Entre em contato conosco</h3>
+                    </div>
+                    <div class="col-md-4 contact-box">
+                        <i class="fas fa-phone"></i>
+                        <p><span class="contact-title">Ligue para:</span> (33) 99999-9999</p>
+                        <p><span class="contact-title">Horários:</span> 08:00 - 19:00</p>
+                    </div>
+                    <div class="col-md-4 contact-box">
+                        <i class="fas fa-envelope"></i>
+                        <p><span class="contact-title">Envie um e-mail:</span> rickandmorty@gmail.com</p>
+                    </div>
+                    <div class="col-md-4 contact-box">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p><span class="contact-title">Venha tomar um café:</span> Rua Lorem Ipsum - 1314</p>
+                    </div>
+                    <div class="col-md-6" id="msg-box">
+                        <p>Ou nos deixe uma mensagem:</p>
+                    </div>
+                    <div class="col-md-6" id="contact-form">
+                        <form action="">
+                            <input type="email" class="form-control" placeholder="E-mail" name="email">
+                            <input type="text" class="form-control" placeholder="Assunto" name="subject">
+                            <textarea class="form-control" name="message" rows="3" placeholder="Sua mensagem..."></textarea>
+                            <input type="submit" class="main-btn" value="Enviar">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="copy-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>Desenvolvido por <a href="#">Ornelas Desenvolvimento</a> &copy; 2021</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Scripts do projeto -->
     <script src="js/scripts.js"></script>
 </body>
 </html>
