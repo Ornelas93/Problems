@@ -1,2 +1,2 @@
-# Exercises :rocket:
-- Repository for storing JavaScript programming logic studies.
+# Exercícios  :rocket:
+- Repositório para armazenar estudos de lógica de programação usando JavaScript.
