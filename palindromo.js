@@ -6,6 +6,7 @@
 - Fazer pergunta ao receber o problema
 - Fazer usando um for e verificando as duas pontas ao mesmo tempo
 - usar sem pre o padrao camelCase
+- teste jenkins
 */
 
 const testCase = ["amor a roma", "raysson", "A Daniela ama a lei? Nada!", "Aí, Lima falou: “Olá, família!”."];
